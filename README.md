@@ -200,3 +200,21 @@ All panels render at **130 DPI, DejaVu Sans font** for regulatory presentation.
 - **Insight:** Compounding growth + loss provisioning reserves reveal true profitability (48% of gross NII retained after defaults)
 
 ---
+
+## 🎯 Key Findings & Strategic Insights
+
+### **Model Performance & Alternative Data**
+
+1. **XGBoost Predictive Lift:** +33 bps over Logistic Regression (ROC-AUC 0.781 vs. 0.748)
+   - *Implication:* Alternative data (M-Pesa, Till, remittances) captures non-linear default signals missed by traditional scorecard
+   - *Value:* Each +33 bp AUC improvement translates to ~2–3% improvement in loss prediction accuracy
+
+2. **M-Pesa Velocity as Proxy for Cash Flow Stability:**
+   - Ranking: #2 feature importance (after CRB score)
+   - *Use Case:* Ideal for credit-invisible borrowers (thin/no CRB history) → can score on transaction velocity alone
+
+3. **Diaspora Remittance Stability Signal:**
+   - Diaspora-backed loans: 4.1% PD vs. 6.2% for mobile micro (33% lower risk)
+   - *Implication:* Remittance inflow consistency provides income certainty; ideal collateral proxy
+
+---
